@@ -1,0 +1,134 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form {
+  border-radius: 10px;
+  width: 25%;
+  margin: auto;
+  height: auto;
+  padding: 40px;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aqua;
+  padding: 20px 0;
+ 
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  background-color: #8caacf;
+}
+
+div + h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #8caacf;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0468aa;
+  color: white;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 426px) and (min-width: 220px) {
+  form {
+      width: 80%;
+  }
+  .navbar {
+    background-color: lightblue; /* Change the background color for small screens */
+    padding: 10px 0; /* Adjust the padding as needed */
+    border: none; /* Remove the border */
+    
+}
+.navbar>a>h1{
+font-weight: lighter;
+font-size: x-small;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 6px; /* Adjust the padding for smaller screens */
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #8caacf;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 8px; /* Adjust the padding for smaller screens */
+  padding-bottom: 8px; /* Adjust the padding for smaller screens */
+  text-align: left;
+  background-color: #0468aa;
+  color: white;
+  text-align: center;
+}
+
+}
